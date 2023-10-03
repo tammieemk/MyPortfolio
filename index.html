@@ -1,117 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Shopping Addict</title>
+</head>
 
 <body>
+    <header>
 
-    <head>
-        <title>Tamilore's Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    </header>
 
-        <link rel="stylesheet" href="index.css">
+    <nav>
+        <div class="topnav">
+            <a href="new-in.html" id="new-in">NEW IN</a>
+            <a href="index.html" id="index">BEST SELLERS</a>
+            <a href="sales.html" id="sales">SALES</a>
+           
+            <div class="cart">
+                <button> <i class="fa fa-cart-plus"></i> 
+                </button></div>
+            </div>
 
-    </head>
+            <div class="searchBox">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="searchInput">
+                    <input type="text" placeholder="Search Here">
+                </div>
+                <div class="close">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
 
-    <p id="city"><img src="photography/img-six.JPG" class="city-lights" height="250" width="300"></p>
-    <h1 class=" class"><b><i>Mk's Gallery</i></b></h1>
-    <p>
-    <ul id="headings">
-        <li class="heading"><a class="topic" href="#about-me">About Me<span> -</span></a></li>
-        <li class="heading"><a class="topic" href="#art-work">Art Work<span> -</span></a></li>
-        <li class="heading"><a class="topic" href="#photography">Photography</a></li>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">-->
+    </nav>
 
-    </ul>
-    </p>
 
     <div>
-        <hr />
-        <h2 class="welcome">Welcome to my portfolio!</h2>
+        <h2>HERE'S AN OVERVIEW OF LAST MONTH'S BESTSELLERS</h3>
+            <figure>
+                <img src="bestseller.jpg/best-sellers-two.jpg" class="pics">
+                <figcaption>Flower Shaped Clawclips</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-three.jpg" class="pics">
+                <figcaption>Pearl Clawclips</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-five.jpg" class="pics">
+                <figcaption>Beanies</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-six.jpg" class="pics">
+                <figcaption>Neutral Beanies</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-eight.jpg" class="pics">
+                <figcaption>Pink Tote</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-nine.jpg" class="pics">
+                <figcaption>Black Bagpack</figcaption>
+            </figure>
+
+            <figure>
+                <img src="bestseller.jpg/best-sellers-ten.jpg" class="pics">
+                <figcaption>Black Leather Purse </figcaption>
+            </figure>
     </div>
 
-    <div>
-        <h5>
-            <p class="welcome-speech">
-                This portfolio contains a majority of my acheivements.<br />
+    <script>
+        var search = document.querySelector('.search');
+        var searchBox = document.querySelector('.searchBox');
+        var close = document.querySelector('.close');
+        search.onclick = function () {
+            searchBox.classList.add('active');
+        }
 
-                And I have gathered my favourites works<br />
+        close.onclick = function () {
+            searchBox.classList.remove('active');
+        }
 
-                to display to you.<br />
+    </script>
 
-                Enjoy and thank you!
-            </p>
-        </h5>
-    </div>
-    <hr />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentPage = window.location.href;
 
+            var navLinks = document.querySelectorAll("nav a")
 
-    <h3 class="topics">About Me</h3>
-    <div id="mini-autobiography">
-        As I grew older I came across several hobbies which brings me joy and comfort.
-        I am greatful to have been blessed with the talent of art.
-        I am the last born of a family of six. I was born and raised with Nigerian intellect
-        and I became extremely creative and I strive for greatness in everything I set my mind to.
-        I have created, crafted and produced various art pieces-mostly sketches- throughout her life using various
-        muses, inspirations, references and my wonderful imagination. Using art as a way to express the feelings words
-        could not express and my feeligs to the fullest.
-
-    </div>
-    <div id="mini-autobiography">
-        I am always crafting something up, always ready and set with a sketchbook to sketch out and idea that comes
-        to mind. I will be an amazing photographer someday, {but right now my skills are quite average} being aware
-        surroundings and the beauty of the environment as well as the individuals in them I try to make my photographs
-        capture how they look in my mind. I use Photography as a way to show the world how things are portrayed like in
-        mind.
-        Being a lover of nature and its exquisite sights, I am a young upcoming artist who would love to display some of
-        my
-        work at important places.
-    </div>
-
-    <h2 class="topics">ART GALLERY</h2>
-
-    <h3 class="topics">Art Work</h3>
-    <div id="art-work">
-        <img src="art-work/img-one.JPG" class="pics" height="290" width="350">
-        <img src="art-work/img-four.JPG" class="pics" height="370" width="400">
-        <img src="art-work/img-five.JPG" class="pics" height="390" width="480">
-        <img src="art-work/img-six.JPG" class="pics" height="350" width="490">
-
-    </div>
-
-    <h3 class="topics">Photography</h3>
-    <div id="photography">
-        <img src="photography/img-one.JPG" class="pics" height="350" width="460">
-        <img src="photography/img-two.JPG" class="pics" height="290" width="390">
-        <img src="photography/img-four.JPG" class="pics" height="300" width="400">
-        <img src="photography/img-three.JPG" class="pics" height="390" width="450">
-
-    </div>
-    <form id="thoughts" action="action_page.php" method="post">
-        <fieldset>
-            <legend>
-                <p>What did you think of this page?</p>
-            </legend>
-            <br />
-            <label for="comments">
-                <textarea type="comments" rows="10" cols="20" >
-             Please enter your response here!
-                </textarea>
-            </label>
-            <!-- <input type="comments"  name="comments" required="required">-->
-            <br />
-           <input type="submit" value="Submit">
-
-        </fieldset>
-    </form>
-    <address>
-        <p><a href="mailto:tammi33mk@gmail.com"></a>Email me</p>
-
-
-        <p><a href="https://www.instagram.com/tammiee.mk/?hl=en">Instagram: tammiee.mk</a> </p>
-
-    </address>
+            navLinks.forEach(function (link) {
+                // Check if the link's href matches the current page's URL
+                if (currentPage === link.href) {
+                    link.classList.add("clicked");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

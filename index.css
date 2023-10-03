@@ -1,58 +1,237 @@
-body{ background-color: #fc8eac;
-    font-size: medium;
-    font-family:'Rochester', cursive;
+body{
+    background-image: url(background-img-2.jpg);
+    width: 100%;
+    height: 0%;
+    padding: 0%;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:auto;
 }
 
-#city{
+nav{
+    margin: 20px 50px 8px 10px;
     text-align: center;
+    font-size: 20px;
 }
 
-.heading{
-      font:30px
+nav a{
+       display: inline-block;
+       padding-right: 15px;
+       padding-top: 85px;
+       padding-bottom: 50px;
+       text-decoration: none;
+       color: #000;
+    }
 
+
+/*nav a.clicked{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  
+}*/
+
+nav:link{
+   font-size: 12.5px;  
+  
 }
 
-#headings .heading{
+nav:visited{
+   color: rgb(30, 25, 3); 
+}
+
+
+nav:hover{
+   font-size: 15px;
+   padding-left: 10px;
+}
+
+
+nav:active{
+    color: orangered;
+}
+
+#index:hover , #new-in:hover , #sales:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  
+}
+
+.cart{
+    float:right;
+    padding-bottom: 30px;
+}
+
+button{
+    background-color: antiquewhite;
+    size: 15px;
+}
+
+.searchBox{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+    text-shadow: 1px 2px 1px  rgb(173, 169, 169) ;
+    position: relative;
+    transition: 0.3s;
+    margin-bottom: 50px;
+}
+
+.searchBox.active{
+    width: 340px;
+}
+
+.search {
+    line-height: 60px;
     text-align: center;
-    text-decoration: none;
+    min-width: 60px;
+}
+
+.search i{
+   font-size: 20px;
+}
+
+.searchBox .searchInput{
+    position: absolute;
+    left: 60px;
+    line-height: 60px;
+    height: 100%;
+    width: calc(100% - 120px);
+}
+
+.searchBox .searchInput input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.searchBox .close{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.pics {
+    width: 200px;
+    max-height: 290px;
+    height: 240px;
+
+}
+
+.pics:hover{
+    opacity: 0.5;
+}
+
+
+figure{
     display: inline-block;
+    padding-left: 90px;
+    padding-top: 50px;
 }
 
-.heading{
-    text-align: center;
+ 
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    .body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    nav {
+        width: 100%;
+        height: 100px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    nav a {
+        /* Initial background color */
+        padding: 5px;
+        margin: 0px 2px 0px 2px;
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
+
+
+    nav:link {
+        font-size: 12.5px;
+
+    }
+
+    nav:visited {
+        color: rgb(30, 25, 3);
+    }
+
+
+    nav:hover {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+
+    nav:active {
+        color: orangered;
+    }
+
+    nav a.clicked {
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+        transition: 0.5s;
+    }
+
+    .searchBox {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 60px;
+        width: 60px;
+        text-shadow: 1px 2px 1px rgb(173, 169, 169);
+        position: relative;
+        transition: 0.3s;
+        margin-bottom: 50px;
+    }
+
+    .h2 {
+        padding-top: 20px;
+    }
+
+    .pics {
+        width: 190px;
+        max-height: 290px;
+        height: 250px;
+        text-align: center;
+    }
+
+    figure {
+        display: inline-block;
+        padding-left: 80px;
+        padding-top: 40px;
+    }
+
+    .no-sales{
+        margin-top: 50px;
+     }
 }
 
-.class{
-    text-align: center;
-}
 
-.welcome{
-    text-align: center;
-}
 
-.welcome-speech{
-    text-align: center;
-}
 
-.story{
-    text-align:right;
-}
-
-#mini-autobiography{
-    text-align:left;
-}
-
-.pics{
-    border: 5px solid  rgba(255, 204, 221, 0.966)
-}
-
-textarea{
-    row-gap: 10;
-    column-span: 20;
-}
-
-form{
-    text-align: center;
-     width: 50%; 
-    margin: auto;
-}

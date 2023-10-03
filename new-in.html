@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Shopping Addict's New-In</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <div class="topnav">
+            <a href="new-in.html" id="new-in">NEW IN</a>
+            <a href="index.html" id="index">BEST SELLERS</a>
+            <a href="sales.html" id="sales">SALES</a>
+        </div>
+
+        <div class="cart">
+            <button> <i class="fa fa-cart-plus"></i> 
+            </button></div>
+        </div>
+        
+        <div class="searchBox">
+            <div class="search">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchInput">
+                <input type="text" placeholder="Search Here">
+            </div>
+            <div class="close">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+    </nav>
+
+    <h2 text-align="center"><i>This month's theme is all about accessories</i></h2>
+    <div>
+        <figure>
+            <img src="new-in/new-in-loafers-one.jpg" class="pics">
+            <figcaption>Loafers</figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-sandals-two.jpg" class="pics">
+            <figcaption>Women Sandals</figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-birkensocks-three.jpg" class="pics">
+            <figcaption>Birkensocks</figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-tote-four.jpg" class="pics">
+            <figcaption>Black Tote</figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-sweater-five.jpg" class="pics">
+            <figcaption></figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-varsity-six.jpg" class="pics">
+            <figcaption>Varsity Jacket</figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-belt-seven.jpg" class="pics">
+            <figcaption></figcaption>
+        </figure>
+
+        <figure>
+            <img src="new-in/new-in-platforms-eight.jpg" class="pics">
+            <figcaption>Platforms</figcaption>
+        </figure>
+    </div>
+
+    <script>
+        var search = document.querySelector('.search');
+        var searchBox = document.querySelector('.searchBox');
+        var close = document.querySelector('.close');
+        search.onclick = function () {
+            searchBox.classList.add('active');
+        }
+
+        close.onclick = function () {
+            searchBox.classList.remove('active');
+        }
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentPage = window.location.href;
+
+            var navLinks = document.querySelectorAll("nav a")
+
+            navLinks.forEach(function (link) {
+                // Check if the link's href matches the current page's URL
+                if (currentPage === link.href) {
+                    link.classList.add("clicked");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
